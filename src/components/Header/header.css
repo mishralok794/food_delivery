@@ -1,0 +1,105 @@
+.header-parent{
+     font-family: 'Mochiy Pop One', sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100px;
+     width: 100%;
+     background-color: rgba(225, 217, 217, 0.887);
+     border-radius: 5px;
+     box-shadow: 0px -2px 5px 0px;
+}
+
+
+.header-foodLogo{
+     margin-top: 10px;
+     object-fit: cover;
+     height: 50px;
+     width: 100px;
+     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.507);
+     border-radius: 50px;
+}
+
+.header-child{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content:space-around;
+}
+
+.inputBox{
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: aliceblue;
+     border: 1px solid rgba(152, 152, 152, 0.639);
+     padding: 5px;
+     border-radius: 20px;
+     width: 40%;
+     box-shadow: 1px 1px 10px 0px rgb(17, 17, 16 ,.2);
+}
+
+.inputBox>input{
+     font-family:cursive;
+     background-color: inherit;
+     border-radius: 20px;
+     font-size: 20px;
+     padding: 10px;
+     outline: none !important;
+     border: none !important;
+     height: 30px;
+     width: 95%;
+}
+
+.serachIcon{
+     color: rgb(110, 110, 110);
+}
+
+
+.shoppingCart{
+     /* background-color: blue; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.cartIcon{
+     font-size:xx-large !important;
+     color: rgb(17, 17, 16);
+}
+
+.header-ItemCount{
+background-color: rgb(195, 31, 31);
+width: 22px;
+height: 22px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 3px;
+border-radius: 10px;
+position:relative;
+top:-15px;
+left: -10px;
+color: aliceblue;
+}
+
+
+.User-profilePic{
+     height: 50px;
+     border-radius: 20px;
+     animation: shake 5s linear  infinite alternate;
+    
+   
+}
+@keyframes shake{
+     /* 50%{transform: rotate(360deg);} */
+     50%{transform:scale(1)}
+     75%{transform:scale(1.2);}
+     100%{transform:scale(1)}
+
+}
+.toggleIcon{
+     font-size:xx-large !important;
+     transform: rotate(90deg);
+}
