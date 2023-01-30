@@ -24,7 +24,7 @@ const Menu = () => {
 
                <ul >
 
-                    <li className='menuIcon-li'>
+                    <li className='menuIcon-li active'>
                          <a href='/'></a>
                          <spam><HomeRounded /></spam>
                     </li>
