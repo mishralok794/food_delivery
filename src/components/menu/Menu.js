@@ -5,7 +5,7 @@ import './menu.css'
 const Menu = () => {
 
      useEffect(() => {
-          let menuLi = document.querySelectorAll('.menuIcon-li  ')
+          let menuLi = document.querySelectorAll('.menuIcon-li spam ') // youu can add class name as u fill here 
           console.log(menuLi)
           function menuHandler() {
                console.log("hey there")
