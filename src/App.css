@@ -12,6 +12,8 @@
 
 body{
   font-family: 'Mochiy Pop One', sans-serif;
+  background-color:#ECF0F1 ; 
+  /* overflow: hidden; */
 }
 
 .App {

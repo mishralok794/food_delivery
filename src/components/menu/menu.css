@@ -1,7 +1,7 @@
 .parent-menu {
      /* z-index: 2; */
      width: 100%;
-     height: 70px;
+     height: 30px;
      background-color: rgb(129, 125, 125, .5);
      border-radius: 10px 10px 0px 0px;
      position: fixed;
@@ -21,7 +21,7 @@
 
 .parent-menu .MuiSvgIcon-root {
      position: relative;
-     font-size: 30px !important;
+     font-size: 20px !important;
      color: rgb(220, 93, 51);
      z-index: 10;
      cursor: pointer;
@@ -29,8 +29,8 @@
 
 .menuIcon-li:hover .MuiSvgIcon-root {
      transition: .5s;
-     font-size: 35px !important;
-     transform: translateY(-45px);
+     font-size: 25px !important;
+     transform: translateY(-30px);
      /* font-size: 40px !important; */
      color: rgba(0, 0, 0, 0.679);
      /* background-color: rgba(46, 46, 91, 0.888); */
@@ -43,13 +43,13 @@
 .Menu-circle {
      z-index: 5;
      position: absolute;
-     left: 91px;
-     top: -43px;
+     left: 89px;
+     top: -50px;
      background-color: rgb(255, 147, 15);
-     border-radius: 20px;
-     height: 55px;
-     width: 55px;
-     border: 7px solid var(--color-ECF0F1);
+     border-radius: 40px;
+     height: 60px;
+     width: 60px;
+     border: 8px solid var(--color-ECF0F1);
      /* opacity: .4; */
 }
 
@@ -81,7 +81,7 @@ ul .menuIcon-li:nth-child(5).active  ~ .Menu-circle{
 }
 
 ul .menuIcon-li:nth-child(6).active  ~ .Menu-circle{
-     transform: translateX(calc(232px * 5));
+     transform: translateX(calc(232.5px * 5));
      transition: 1s;
 }
 
@@ -92,7 +92,7 @@ ul .menuIcon-li:nth-child(6).active  ~ .Menu-circle{
 } */
 
 .active .MuiSvgIcon-root{
-     font-size: 35px !important;
+     font-size: 25px !important;
     color: black;
-     transform: translateY(-45px);
+     transform: translateY(-30px);
 }

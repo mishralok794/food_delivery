@@ -1,0 +1,98 @@
+.parent-items {
+     width: 100%;
+     height: 100vw;
+     background-color: rgb(235, 237, 237);
+}
+
+.category-all-item {
+     margin: 5px 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.category-all-item>p {
+     list-style: none;
+     color: rgb(237, 170, 68);
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+}
+
+.category-all-item-li{
+     margin-right: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: aliceblue;
+    height: 25px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: rgba(225, 133, 20, 0.897);
+    box-shadow: 0px 0px 10px rgba(40, 39, 39, 0.578);
+}
+
+.category-all-item-li:hover{
+     background-color: rgba(225, 92, 20, 0.897);
+}
+
+.child-items {
+     /* background-color: aqua; */
+     width: 100%;
+     margin: 30px 10px;
+     height: 200px;
+     display: flex;
+     /* flex-direction: row; */
+     /* flex-wrap: wrap; */
+     overflow:auto;
+}
+
+::-webkit-scrollbar{
+     display: none;
+}
+
+.Items-first-row {
+     margin: 10px 15px;
+     padding: 20px;
+     cursor: pointer;
+     border-radius: 20px;
+     height: 120px;
+     background-color: blueviolet;
+     box-shadow: 0px 0px 10px rgba(52, 49, 49, 0.689);
+     list-style: none;
+     color: rgb(213, 159, 33);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.Items-first-row:hover{
+     /* transition: .8s; */
+     background-color: rgb(122, 16, 222);
+     height: 122px;
+     /* width: 101px; */
+}
+
+.first-row-item-img ~ h4 {
+     margin: 10px 0px;
+}
+
+.first-row-item-img ~ li:hover{
+     background-color: rgba(225, 152, 36, 0.833);
+}
+
+.first-row-item-img~li {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: aliceblue;
+     width: max-content;
+     height: max-content;
+     background-color: rgb(176, 133, 68);
+     border-radius: 10px;
+}
+
+.first-row-item-img {
+     width: 60%;
+}
