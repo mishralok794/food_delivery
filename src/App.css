@@ -13,7 +13,8 @@
 body{
   font-family: 'Mochiy Pop One', sans-serif;
   background-color:#ECF0F1 ; 
-  /* overflow: hidden; */
+  overflow: hidden; 
+  /* now it will not move we applied display hiiden when we move item then at end view port not kove */
 }
 
 .App {
