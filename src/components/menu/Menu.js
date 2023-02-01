@@ -6,11 +6,11 @@ const Menu = () => {
 
      useEffect(() => {
           let menuLi = document.querySelectorAll('.menuIcon-li ') // youu can add class name as u fill here 
-          console.log(menuLi)                                    // we want to added now here into  the liu so we select only li class name
+          // console.log(menuLi)                                    // we want to added now here into  the liu so we select only li class name
                                        // why we want select li just bcoz we can select its sibling selector 'Menu-circl' 
                                        // and we will use   " ~ " to select that element
           function menuHandler() {
-               console.log("hey there")
+               // console.log("hey there")
                //     console.log(this.classList)
                menuLi.forEach((a) => a.classList.remove("active"));
                this.classList.add("active")

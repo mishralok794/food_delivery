@@ -12,7 +12,7 @@ function Header() {
       <div className='header-child'>
 
         <div className='img'>
-          <img className='header-foodLogo' src='https://w7.pngwing.com/pngs/686/527/png-transparent-fast-food-hamburger-sushi-pizza-fast-food-food-breakfast-fast-food-restaurant-thumbnail.png' alt='foodLogo' />
+          <img className='header-foodLogo' src='https://firebasestorage.googleapis.com/v0/b/blog-cf1e3.appspot.com/o/foodDilevery%2Ffood%2Fkindpng_7466928.png?alt=media&token=a1fcbda1-8d1c-4142-8b3a-63772769f4ef' alt='foodLogo' />
         </div>
 
         <div className='inputBox'>

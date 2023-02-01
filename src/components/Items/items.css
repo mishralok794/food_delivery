@@ -39,10 +39,10 @@
 .child-items {
      /* background-color: rgba(171, 245, 245, 0.524); */
      width: 100%;
-     margin: 30px 10px;
-     height:max-content;
+     margin: 40px 10px 10px 10px;
+     height:200px;
      display: flex;
-     /* flex-wrap: wrap; */
+     align-items: center;
      overflow:auto;
 }
 
@@ -52,10 +52,11 @@
 
 .Items-first-row {
      margin: 10px 50px;
-     padding: 20px;
+     padding: 30px;
      cursor: pointer;
      border-radius: 20px;
-     height: 120px;
+     height: 140px;
+     width:150px;
      background-color: blueviolet;
      box-shadow: 0px 0px 10px rgba(52, 49, 49, 0.689);
      list-style: none;
@@ -69,11 +70,16 @@
 .Items-first-row:hover{
      transition: .8s;
      background-color: rgb(134, 17, 243);
-     transform: scale(1.1);
+     transform: scale(1.01);
      /* width: 101px; */
 }
 
-.first-row-item-img ~ h4 {
+.first-row-item-img:hover{
+     transform: scale(1.9);
+     transition: .5s;
+}
+
+.first-row-item-img ~ h5 {
      margin: 10px 0px;
 }
 
@@ -82,6 +88,7 @@
 }
 
 .first-row-item-img~li {
+     margin-bottom: 10px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -93,7 +100,8 @@
 }
 
 .first-row-item-img {
-     width: 60%;
+     /* width: 60%; */
+     height: 80px;
 }
 
 
@@ -118,6 +126,11 @@
      left: 20px;
      width: 120px;
    margin: auto;
+}
+
+.Item-second-row-img:hover{
+     transform: scale(1.5);
+     transition: .5s;
 }
 
 .Items-second-row{
@@ -156,6 +169,11 @@
 .Items-second-row-contents> p > spam{
      font-size:20px;
      color: rgb(232, 146, 19);
+}
+
+.Items-second-row-contents> p:hover{
+     transition: .5s;
+     transform: scale(1.3);
 }
 
 .Items-second-row-fav-add> .MuiSvgIcon-root{

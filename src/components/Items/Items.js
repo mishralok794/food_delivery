@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './items.css'
 import { useState } from 'react';
 import DoubleArrowRoundedIcon from '@mui/icons-material/DoubleArrowRounded';
@@ -10,7 +10,26 @@ import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 function Items() {
      let [value, setValue] = useState()
      let item = new Array(20).fill(10)
+     let [drinks,setDrinks]=useState(null);
+     let [fastFood,setfastFood]=useState(null);
+     
+     useEffect(() => {
 
+          fetch("drinks.json")
+               .then(res => res.json())
+               .then(res => {
+                    setDrinks(res);
+                    // console.log(res);
+               })
+
+               fetch("fastFood.json")
+               .then(respond => respond.json())
+               .then(result => {
+                    setfastFood(result);
+                    // console.log(result,"fastfood")
+               })
+
+     }, [])
 
      return (
           <div className='parent-items'>
@@ -21,12 +40,12 @@ function Items() {
                </div>
 
                <div className='child-items'>
-                    {
-                         item.map((d) => {
+                    { fastFood &&
+                         fastFood.map((d) => {
 
                               return (<div className='Items-first-row'>
-                                   <img className='first-row-item-img' src='https://static.vecteezy.com/system/resources/previews/008/507/708/original/classic-cheeseburger-with-beef-patty-pickles-cheese-tomato-onion-lettuce-and-ketchup-mustard-free-png.png' alt='/' />
-                                   <h4>Burger</h4>
+                                   <img className='first-row-item-img' src={d.image} alt='/' />
+                                   <h5>{d.name.slice(0,4)}</h5>
                                    <li><ChevronRightRoundedIcon /></li>
                               </div>)
                          })
@@ -37,14 +56,14 @@ function Items() {
 
 
                <div className='second-child'>
-               {
-                    item.map((d) => {
+                    { drinks &&
+                         drinks.map((d) => {
 
-                         return (
-                                   <div className='Items-second-row'>
+                              return (
+                                   <div key={d.id} className='Items-second-row'>
 
                                         <div className='Items-second-row-items-img-rating-type'>
-                                             <img className='Item-second-row-img' src='https://freepngimg.com/thumb/drinks/9-2-drink-png-6-thumb.png' alt='/' />
+                                             <img className='Item-second-row-img' src={d.image} alt='/' />
 
                                              <div className='Items-second-row-contents'>
                                                   <h4>Soft Drinks</h4>
@@ -56,7 +75,7 @@ function Items() {
                                                             setValue(newValue);
                                                        }}
                                                   />
-                                                  <p><spam>$</spam>{10}</p>
+                                                  <p><spam>$</spam> &nbsp;{d.price?d.price:10}</p>
                                              </div>
                                         </div>
                                         <div className='Items-second-row-fav-add' >
@@ -65,11 +84,11 @@ function Items() {
                                         </div>
 
                                    </div>
-                              
 
-                         )
-                    })
-               }
+
+                              )
+                         })
+                    }
 
                </div>
 
